@@ -13,7 +13,7 @@ public:
 	double area();
 
 	void turn_90();
-	bool operator==(Triangle &obj);//not const because method area() is used in realization
+	bool operator==(Triangle &obj);//not const & because method area() is used in realization
 
 	friend ostream& operator<<(ostream& os, Triangle obj);
 

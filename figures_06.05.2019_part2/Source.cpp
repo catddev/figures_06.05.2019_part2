@@ -27,10 +27,10 @@ int main() {
 	cout << t << endl;
 
 	cout << "turn 90 to the right" << endl;
-	t.turn_90();
+	t.turn_90();//90
 	cout << t << endl;
 	cout << "again turn 90 to the right" << endl;
-	t.turn_90();
+	t.turn_90();//180
 	cout << t << endl;
 
 	cout << "area: " << t.area() << endl;

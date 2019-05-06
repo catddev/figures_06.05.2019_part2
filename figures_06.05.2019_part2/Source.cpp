@@ -24,8 +24,15 @@ int main() {
 	Triangle t1(t);
 	cout << t << endl;
 	t.move(10, 7);
-	t.turn_180();
 	cout << t << endl;
+
+	cout << "turn 90 to the right" << endl;
+	t.turn_90();
+	cout << t << endl;
+	cout << "again turn 90 to the right" << endl;
+	t.turn_90();
+	cout << t << endl;
+
 	cout << "area: " << t.area() << endl;
 	cout << (t == t1) << endl;
 

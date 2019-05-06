@@ -6,6 +6,7 @@ Triangle::Triangle()
 	a = 0;
 	b = 0;
 	c = 0;
+	turn = 0;
 }
 
 Triangle::Triangle(double x, double y, double a, double b, double c)
@@ -15,6 +16,7 @@ Triangle::Triangle(double x, double y, double a, double b, double c)
 	this->a = a;
 	this->b = b;
 	this->c = c;
+	turn = 0;
 }
 
 double Triangle::area()
@@ -27,15 +29,13 @@ double Triangle::area()
 
 void Triangle::turn_90()
 {
-	//??? also nothing happens?
-}
-
-void Triangle::turn_180()
-{
-	double tmp = a;
-	a = c;
-	c = b;
-	b = tmp;
+	turn += 90;
+	if (turn % 180 == 0) {
+		double tmp = a;
+		a = c;
+		c = b;
+		b = tmp;
+	}
 }
 
 bool Triangle::operator==(Triangle & obj)
